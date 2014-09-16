@@ -20,9 +20,9 @@ import java.util.Scanner;
  * letters exactly once. Write a program that finds the longest English
  * anagram where the letters are completely scrambled (no letter is
  * followed by the same letter in both words). For example Mary and army
- * are anagrams, but the a is followed by r in both words, so it isn’t a
+ * are anagrams, but the a is followed by r in both words, so it isnâ€™t a
  * scrambled anagram. Pot and top are scrambled anagrams.
- * Try using last week’s smaller dictionary first. This has words up to 15
+ * Try using last weekâ€™s smaller dictionary first. This has words up to 15
  * letters long. If you get that working, you could try using the
  * bigdictionary.txt or even biggestdictionary.txt. This has all kinds of
  * words. It has entries that are not proper words. You will need to modify
@@ -63,7 +63,7 @@ public class Lab5v3 {
 	 * Finds the longest English anagram where the letters are completely scrambled
 	 * (no letter is followed by the same letter in both words).<br>
 	 * For example Mary and army are anagrams, but the a is followed by r in both words,
-	 *  so it isn’t a scrambled anagram. Pot and top are scrambled anagrams
+	 *  so it isnâ€™t a scrambled anagram. Pot and top are scrambled anagrams
 	 *  
 	 * @param filename The name of the file to search through
 	 * @return a string of the biggest pair found
@@ -264,7 +264,7 @@ class LongestAnagramComparator implements Comparator<String>
     public int compare(String x, String y)
     {
 
-        if(AnagramUtils.isScrambledAnagram(x, y)) {//ScrambledAnagram(x, y)) {
+        if(isScrambledAnagram(x, y)) {//ScrambledAnagram(x, y)) {
         	if(x.length() + y.length() + 1 > longest.length()) {
         		longest = x + " " + y;
         		sols.offer(longest+"");
